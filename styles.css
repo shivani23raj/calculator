@@ -1,0 +1,149 @@
+
+        body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #282c34;
+    margin: 0;
+}
+
+.heading {
+  position: relative;
+  right: 13rem;
+  gap: 2rem;
+  display: grid;
+  color: white;
+  bottom: 10rem;
+  height: 30vh;
+  text-align: center;
+}
+
+.mail-link {
+  text-decoration: none;
+  top: -8px;
+  position: relative;
+}
+
+.mail-btn {
+  width: 140px;
+  height: 45px;
+  border-radius: 15%;
+  position: absolute;
+  top: 150%;
+
+  bottom: 0;
+  left: 27.5%;
+  background: #d4fdff;
+  border: 1.5px solid #2c00ff;
+}
+
+.container {
+    width: 320px;
+    background-color: #f0f0f0;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.calculator, .history {
+    padding: 20px;
+}
+
+.calculator {
+    display: block;
+}
+
+.history {
+    display: none;
+}
+
+.display {
+    width: 100%;
+    height: 60px;
+    background-color: #222;
+    color: #fff;
+    text-align: right;
+    font-size: 2em;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    width: 100%;
+    height: 60px;
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5em;
+    color: #333;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+    outline: none;
+}
+
+.btn:active {
+    transform: scale(1.1);
+}
+
+.operator {
+    background-color: #f8a23e;
+    color: #fff;
+}
+
+.history-btn, .back-btn {
+    width: 100%;
+    margin-top: 20px;
+    background-color: #4caf50;
+    color: white;
+    height: 50px;
+    font-size: 1.2em;
+}
+
+.btn:active {
+    animation: popUp 0.2s ease-in-out forwards;
+}
+
+@keyframes popUp {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.15);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.history h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.history ul {
+    list-style-type: none;
+    padding: 0;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.history li {
+    background-color: #f4f4f4;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+   

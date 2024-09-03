@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <div class="heading">
+        <h1>Calculator Design</h1>
+        <h3>Created By:- Shivani Raj</h3>
+        <h3>Email:- shivaniraj8632@gmail.com</h3>
+        <button class="mail-btn">
+          <a href="mailto:shivaniraj8632@gmail.com" class="mail-link"
+            >Contact Me</a
+          >
+        </button>
+      </div>
+    <div class="container">
+        <div class="calculator" id="calculator">
+            <input type="text" class="display" id="display" readonly>
+            <div class="buttons">
+                <button class="btn" onclick="clearDisplay()">C</button>
+                <button class="btn" onclick="deleteLast()">DEL</button>
+                <button class="btn" onclick="appendCharacter('%')">%</button>
+                <button class="btn operator" onclick="appendCharacter('/')">/</button>
+
+                <button class="btn" onclick="appendCharacter('7')">7</button>
+                <button class="btn" onclick="appendCharacter('8')">8</button>
+                <button class="btn" onclick="appendCharacter('9')">9</button>
+                <button class="btn operator" onclick="appendCharacter('*')">*</button>
+
+                <button class="btn" onclick="appendCharacter('4')">4</button>
+                <button class="btn" onclick="appendCharacter('5')">5</button>
+                <button class="btn" onclick="appendCharacter('6')">6</button>
+                <button class="btn operator" onclick="appendCharacter('-')">-</button>
+
+                <button class="btn" onclick="appendCharacter('1')">1</button>
+                <button class="btn" onclick="appendCharacter('2')">2</button>
+                <button class="btn" onclick="appendCharacter('3')">3</button>
+                <button class="btn operator" onclick="appendCharacter('+')">+</button>
+
+                <button class="btn" onclick="appendCharacter('0')">0</button>
+                <button class="btn" onclick="appendCharacter('.')">.</button>
+                <button class="btn" onclick="calculate()">=</button>
+            </div>
+            <button class="btn history-btn" onclick="showHistory()">History</button>
+        </div>
+
+        <div class="history" id="history">
+            <h2>Calculation History</h2>
+            <ul id="history-list"></ul>
+            <button class="btn back-btn" onclick="hideHistory()">Back</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+  
+</body>
+</html>
